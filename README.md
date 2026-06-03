@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 AI Study Assistant
 
-## Getting Started
+An AI-powered Study Assistant built with Next.js (Frontend) and FastAPI (Backend) using OpenRouter LLMs. This project helps students ask questions and get instant AI-generated explanations like a tutor.
 
-First, run the development server:
+## ✨ Features
+- Chat with AI in real-time
+- AI-powered answers using OpenRouter API
+- Fast and responsive UI (Next.js)
+- Clean ChatGPT-like interface
+- Auto-scroll chat system
+- "AI is typing..." loading state
+- Fully responsive design
+- Backend powered by FastAPI (Python)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Frontend:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- React Hooks
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Backend:
+- FastAPI
+- Python
+- OpenRouter API (LLM integration)
+- Pydantic
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ How It Works
 
-## Learn More
+User → Frontend (Next.js) → FastAPI Backend → OpenRouter LLM → AI Response → Frontend UI
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ai-study-assistant/
+├── backend/
+│   ├── main.py
+│   ├── database.py (optional if added)
+│   ├── models.py (optional if added)
+│   └── .env
+│
+├── frontend/
+│   ├── app/
+│   │   └── page.tsx
+│   ├── components/
+│   └── styles/
+│
+└── README.md
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 API Endpoint
 
-## Deploy on Vercel
+POST /chat
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Request:
+{
+  "message": "Explain React JS"
+}
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Response:
+{
+  "response": "React is a JavaScript library..."
+}
+
+## 💡 What I Learned
+- Full-stack AI application development
+- Connecting Python backend with Next.js frontend
+- Working with LLM APIs (OpenRouter)
+- Handling CORS issues
+- API request/response handling
+- Building chat UI systems
+
+## 🎯 Future Improvements
+- Chat history with database
+- User authentication
+- PDF/document upload support
+- AI study modes (notes, summaries)
+- Cloud deployment
+
+## 🧑‍💻 Author
+Built by Muzna Ali Siddiqui
+
+## 📌 Note
+This project is for learning full-stack AI development using modern tools.
