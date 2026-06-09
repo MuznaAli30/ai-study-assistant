@@ -24,7 +24,6 @@ Backend:
 - FastAPI
 - Python
 - OpenRouter API (LLM integration)
-- Pydantic
 
 ## ⚙️ How It Works
 
