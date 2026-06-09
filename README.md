@@ -34,15 +34,23 @@ User → Frontend (Next.js) → FastAPI Backend → OpenRouter LLM → AI Respon
 
 ai-study-assistant/
 ├── backend/
+
 │   ├── main.py
+
 │   ├── database.py (optional if added)
+
 │   ├── models.py (optional if added)
+
 │   └── .env
 │
 ├── frontend/
+
 │   ├── app/
+
 │   │   └── page.tsx
+
 │   ├── components/
+
 │   └── styles/
 │
 └── README.md
