@@ -33,6 +33,7 @@ User → Frontend (Next.js) → FastAPI Backend → OpenRouter LLM → AI Respon
 ## 📁 Project Structure
 
 ai-study-assistant/
+
 ├── backend/
 
 │   ├── main.py
@@ -52,6 +53,7 @@ ai-study-assistant/
 │   ├── components/
 
 │   └── styles/
+|
 │
 └── README.md
 
